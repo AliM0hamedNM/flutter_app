@@ -1,8 +1,7 @@
-
-
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_import
 
 import 'package:flutter/material.dart';
+import 'package:intl_phone_field/phone_number.dart';
 
 class Signup extends StatelessWidget {
   const Signup({super.key});
@@ -10,62 +9,263 @@ class Signup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.purple[300],
-          title: Text(
-            "Welcome",
-            style: TextStyle(
-                fontSize: 30,
-                fontFamily: "myfont",
-                fontWeight: FontWeight.w500),
-          ),
+      backgroundColor: Color(0xFF0c8fad),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(140.0),
+        child: AppBar(
           centerTitle: true,
-        ),
-        body: SizedBox(
-          width: double.infinity,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, "/login");
-                },
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.purple),
-                  padding: MaterialStateProperty.all(
-                      EdgeInsets.symmetric(horizontal: 79, vertical: 10)),
-                  shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(27))),
-                ),
-                child: Text(
-                  "login",
-                  style: TextStyle(fontSize: 24),
-                ),
+          flexibleSpace: ClipRRect(
+            borderRadius: const BorderRadius.only(
+                bottomRight: Radius.circular(50.0),
+                bottomLeft: Radius.circular(50.0)),
+            child: Container(
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('images/10.jpg'), fit: BoxFit.fill),
               ),
-              SizedBox(
-                height: 22,
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, "/signup");
-                },
-                style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all(Colors.purple[100]),
-                  padding: MaterialStateProperty.all(
-                      EdgeInsets.symmetric(horizontal: 77, vertical: 13)),
-                  shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(27))),
-                ),
-                child: Text(
-                  "SIGNUP",
-                  style: TextStyle(fontSize: 17, color: Colors.grey[850]),
-                ),
-              ),
-            ],
+            ),
           ),
-        ));
+          title: const Text(
+            '',
+            style: TextStyle(
+              color: Color(0xFF2296f3),
+            ),
+          ),
+          backgroundColor: Color(0xFF2296f3),
+          shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+            bottomRight: Radius.circular(50.0),
+            bottomLeft: Radius.circular(50.0),
+          )),
+        ),
+      ),
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
+            child: SizedBox(
+              width: double.infinity,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    'انشاء الحساب',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 12,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(66),
+                    ),
+                    width: 266,
+                    height: 40,
+                    padding: EdgeInsets.symmetric(horizontal: 60),
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      decoration: InputDecoration(
+                          hintStyle:
+                              TextStyle(height: 3, color: Color(0xFF0c8fad)),
+                          hintText: "اسم الطبيب ",
+                          border: InputBorder.none),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 9,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(66),
+                    ),
+                    width: 266,
+                    height: 40,
+                    padding: EdgeInsets.only(top: 13),
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      decoration: InputDecoration(
+                          hintStyle:
+                              TextStyle(height: 2, color: Color(0xFF0c8fad)),
+                          hintText: "التخصص",
+                          border: InputBorder.none),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 9,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(66),
+                    ),
+                    width: 266,
+                    height: 40,
+                    padding: EdgeInsets.only(top: 10),
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      keyboardType: TextInputType.phone,
+                      decoration: InputDecoration(
+                          hintStyle:
+                              TextStyle(height: 2, color: Color(0xFF0c8fad)),
+                          hintText: "رقم الهاتف",
+                          border: InputBorder.none),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 9,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(66),
+                    ),
+                    width: 266,
+                    height: 40,
+                    padding: EdgeInsets.only(top: 10),
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      decoration: InputDecoration(
+                          hintStyle:
+                              TextStyle(height: 2, color: Color(0xFF0c8fad)),
+                          hintText: "الشهادات والخبرات",
+                          border: InputBorder.none),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 9,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(66),
+                    ),
+                    width: 266,
+                    height: 40,
+                    padding: EdgeInsets.only(top: 10),
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      decoration: InputDecoration(
+                          hintStyle:
+                              TextStyle(height: 2, color: Color(0xFF0c8fad)),
+                          hintText: "عنوان العيادة",
+                          border: InputBorder.none),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 9,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(66),
+                    ),
+                    width: 266,
+                    height: 40,
+                    padding: EdgeInsets.only(top: 10),
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      keyboardType: TextInputType.number,
+                      decoration: InputDecoration(
+                          hintStyle:
+                              TextStyle(height: 2, color: Color(0xFF0c8fad)),
+                          hintText: "رقم العيادة",
+                          border: InputBorder.none),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 9,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(66),
+                    ),
+                    width: 266,
+                    height: 40,
+                    padding: EdgeInsets.only(top: 10),
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      obscureText: true,
+                      decoration: InputDecoration(
+                          hintStyle:
+                              TextStyle(height: 2, color: Color(0xFF0c8fad)),
+                          hintText: "كلمة السر",
+                          border: InputBorder.none),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 9,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(66),
+                    ),
+                    width: 266,
+                    height: 40,
+                    padding: EdgeInsets.only(top: 10),
+                    child: TextField(
+                      obscureText: true,
+                      textAlign: TextAlign.center,
+                      decoration: InputDecoration(
+                          hintStyle:
+                              TextStyle(height: 2, color: Color(0xFF0c8fad)),
+                          hintText: "اعادة كلمة السر",
+                          border: InputBorder.none),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 9,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(66),
+                    ),
+                    width: 266,
+                    height: 40,
+                    padding: EdgeInsets.only(top: 10),
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      decoration: InputDecoration(
+                          hintStyle:
+                              TextStyle(height: 2, color: Color(0xFF0c8fad)),
+                          hintText: "يرجى رفع مايثبت انك طبيب",
+                          border: InputBorder.none),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 9,
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/");
+                    },
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(
+                          Color.fromARGB(255, 3, 202, 247)),
+                      padding: MaterialStateProperty.all(
+                          EdgeInsets.symmetric(horizontal: 50, vertical: 5)),
+                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(27))),
+                    ),
+                    child: Text(
+                      "انشاءالحساب",
+                      style: TextStyle(fontSize: 22, color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
 

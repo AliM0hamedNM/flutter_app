@@ -21,7 +21,7 @@ class Login extends StatelessWidget {
             child: Container(
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage('images/7.png'), fit: BoxFit.fill),
+                    image: AssetImage('images/10.jpg'), fit: BoxFit.fill),
               ),
             ),
           ),

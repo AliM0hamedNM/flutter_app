@@ -8,6 +8,7 @@ class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color(0xFF2296f3),
         appBar: PreferredSize(
@@ -21,7 +22,7 @@ class Welcome extends StatelessWidget {
               child: Container(
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                      image: AssetImage('images/7.png'), fit: BoxFit.fill),
+                      image: AssetImage('images/9.jpg'), fit: BoxFit.fill),
                 ),
               ),
             ),
