@@ -1,5 +1,5 @@
 // ignore_for_file: prefer_const_constructors, unused_import
-
+import 'package:toggle_switch/toggle_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
@@ -152,6 +152,127 @@ class Login extends StatelessWidget {
                   SizedBox(
                     height: 17,
                   ),
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.center,
+                  //   children: [
+
+                  //     Container(
+
+                  //       height: 50,
+                  //       width: 130,
+                  //       decoration: BoxDecoration(
+                  //         color: Colors.white,
+                  //         borderRadius: BorderRadius.circular(66),
+
+                  //       ),
+                  //       child: Center(
+                  //         child: Text(
+                  //           "ذكر",
+                  //           style: TextStyle(
+                  //               color: Color(0xFF0c8fad),
+                  //               fontWeight: FontWeight.bold,
+                  //               fontSize: 18),
+                  //         ),
+                  //       ),
+                  //     ),
+                  //     SizedBox(
+                  //       width: 10,
+                  //     ),
+                  //     Container(
+                  //       child: Center(
+                  //           child: Container(
+                  //         child: Container(
+                  //           height: 50,
+                  //           width: 130,
+                  //           decoration: BoxDecoration(
+                  //               color: Colors.white,
+                  //               borderRadius: BorderRadius.circular(66),
+
+                  //               ),
+                  //           child: Center(
+                  //               child: Text("انثى",
+                  //                   style: TextStyle(
+                  //                       color: Color(0xFF0c8fad),
+                  //                       fontWeight: FontWeight.bold,
+                  //                       fontSize: 18))),
+                  //         ),
+                  //       )),
+                  //     ),
+                  //   ],
+                  // ),
+                  ToggleSwitch(
+                    minWidth: 130.0,
+                    initialLabelIndex: 1,
+
+                    cornerRadius: 50.0,
+                    activeFgColor: Colors.white,
+                    inactiveBgColor: Colors.grey,
+                    inactiveFgColor: Colors.white,
+                    totalSwitches: 2,
+                    labels: ['Male', 'Female'],
+                    icons: [Icons.man, Icons.woman],
+                    // ignore: prefer_const_literals_to_create_immutables
+                    activeBgColors: [
+                      [Colors.blue],
+                      [Colors.pink]
+                    ],
+                    onToggle: (index) {
+                      debugPrint('switched to: $index');
+                    },
+                  ),
+
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.center,
+                  //   children: [
+                  //     // Radio(
+                  //     //   value: 1,
+                  //     //   groupValue: 1,
+                  //     //   onChanged: (value) {},
+                  //     //   activeColor: Colors.white,
+                  //     // ),
+                  //     SizedBox(
+                  //       width: 10.0,
+                  //     ),
+                  //     Row(
+                  //       children: [
+                  //         Container(
+                  //           decoration: BoxDecoration(
+                  //             color: Colors.white,
+                  //             borderRadius: BorderRadius.circular(66),
+                  //           ),
+                  //           width: 150,
+                  //           padding: EdgeInsets.symmetric(horizontal: 60),
+                  //           child: TextField(
+                  //             textAlign: TextAlign.center,
+                  //             decoration: InputDecoration(
+                  //                 hintStyle: TextStyle(color: Color(0xFF0c8fad)),
+                  //                 hintText: "ذكر",
+                  //                 border: InputBorder.none),
+                  //           ),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //     SizedBox(
+                  //       width: 5,
+                  //     ),
+                  //     Container(
+                  //       decoration: BoxDecoration(
+                  //         color: Colors.white,
+                  //         borderRadius: BorderRadius.circular(66),
+                  //       ),
+                  //       width: 150,
+                  //       padding: EdgeInsets.symmetric(horizontal: 60),
+                  //       child: TextField(
+                  //         textAlign: TextAlign.center,
+                  //         decoration: InputDecoration(
+                  //             hintStyle: TextStyle(color: Color(0xFF0c8fad)),
+                  //             hintText: "انثى",
+                  //             border: InputBorder.none),
+                  //       ),
+                  //     ),
+                  //   ],
+                  // ),
+
                   SizedBox(
                     height: 17,
                   ),
