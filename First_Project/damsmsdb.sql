@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2024 at 07:07 PM
+-- Generation Time: Apr 26, 2024 at 09:59 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -83,12 +83,13 @@ INSERT INTO `tblappointment` (`ID`, `AppointmentNumber`, `Name`, `MobileNumber`,
 (1, 141561395, 'Rajesh Kaur', 989, 'raj@gmail.com', '2022-11-12', '12:41:00', '2', 2, 'Thanks', '2022-11-10 06:11:50', 'Cancelled due to incorrect mobile number', 'Cancelled', '2022-11-10 12:40:35'),
 (2, 499219152, 'Mukesh Yadav', 7977797979, 'mukesh@gmail.com', '2022-11-13', '12:30:00', '2', 2, 'bmnbmngfugwakJDiowhfdgr', '2022-11-10 07:08:58', 'Your appointment has been approved, kindly came at mention time', 'Approved', '2022-11-10 12:34:41'),
 (3, 485109480, 'Tina Yadav', 4654564464, 'tina@gmail.com', '2022-11-11', '13:00:00', '1', 1, 'bjnbjh', '2022-11-10 12:08:51', 'Appointment request has been approved', 'Approved', '2022-11-10 14:32:29'),
-(4, 611388102, 'Jyoti', 7897987987, 'jyoti@gmail.com', '2022-11-12', '02:00:00', '1', 1, 'Thanks', '2022-11-10 14:31:17', NULL, NULL, NULL),
+(4, 611388102, 'Jyoti', 7897987987, 'jyoti@gmail.com', '2022-11-12', '02:00:00', '1', 1, 'Thanks', '2022-11-10 14:31:17', 'ggh', 'Approved', '2024-04-25 08:12:32'),
 (5, 607441873, 'Anuj kumar', 1425362514, 'anujkkk@hmak.com', '2022-11-16', '20:50:00', '1', 1, 'NA', '2022-11-11 01:19:37', NULL, NULL, NULL),
 (6, 667282012, 'Rahul', 1425251414, 'rk@gmail.com', '2022-11-15', '18:31:00', '2', 2, 'NA', '2022-11-11 01:48:52', 'Approved', 'Approved', '2022-11-11 07:24:25'),
 (7, 599829368, 'Anita', 4563214563, 'anta@test.com', '2022-11-25', '15:20:00', '2', 2, 'NA', '2022-11-11 01:49:54', NULL, NULL, NULL),
 (8, 940019123, 'Amit Kumar', 1425362514, 'amitkr123@test.com', '2022-11-15', '12:30:00', '13', 4, 'NA', '2022-11-11 01:56:17', 'Your appointment has been approved.', 'Approved', '2022-11-11 01:56:55'),
-(9, 415003599, 'ksdaskdj', 772395758, 'jdslkajdfjoj@gmail.com', '2024-04-23', '09:12:00', '2', 3, '', '2024-04-22 06:10:10', NULL, NULL, NULL);
+(9, 415003599, 'ksdaskdj', 772395758, 'jdslkajdfjoj@gmail.com', '2024-04-23', '09:12:00', '2', 3, '', '2024-04-22 06:10:10', NULL, NULL, NULL),
+(10, 330611453, 'ali', 780726626, 'ali@email.com', '2024-08-14', '12:13:00', '11', 5, '1', '2024-04-25 09:12:55', '1', 'Approved', '2024-04-25 09:14:00');
 
 -- --------------------------------------------------------
 
@@ -200,7 +201,10 @@ INSERT INTO `treatment` (`id`, `drug_id`, `patient_id`) VALUES
 (4, 485109480, 2),
 (5, 2, 485109480),
 (6, 1, 485109480),
-(7, 2, 485109480);
+(7, 2, 485109480),
+(8, 1, 611388102),
+(9, 2, 611388102),
+(10, 2, 330611453);
 
 --
 -- Indexes for dumped tables
@@ -256,7 +260,7 @@ ALTER TABLE `drugs`
 -- AUTO_INCREMENT for table `tblappointment`
 --
 ALTER TABLE `tblappointment`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `tbldoctor`
@@ -280,7 +284,7 @@ ALTER TABLE `tblspecialization`
 -- AUTO_INCREMENT for table `treatment`
 --
 ALTER TABLE `treatment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

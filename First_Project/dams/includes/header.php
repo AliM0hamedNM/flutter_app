@@ -22,8 +22,8 @@
                            
 
                             <a class="navbar-brand d-none d-lg-block" href="index.php">
-                                Doctor Appointment
-                                <strong class="d-block">Management System</strong>
+                                My CLINIC
+                                <strong class="d-block" style="font-size: 18px;">عـــيــادتـــي  </strong>
                             </a>
 
                             <li class="nav-item">

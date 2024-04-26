@@ -97,7 +97,7 @@ $("#doctorlist").html(data);
     justify-content:center;
   }
  #container div {
-    background-color: #0033cc;
+    background-color: #247CFF;
        align-items: center;
        margin:20px;
        width: 100%;
@@ -144,6 +144,7 @@ $("#doctorlist").html(data);
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="images/slider/portrait-successful-mid-adult-doctor-with-crossed-arms.jpg" class="img-fluid" alt="">
+                                        
                                     </div>
 
                                     <div class="carousel-item">
@@ -223,23 +224,23 @@ foreach($results as $row)
             <center style="background-color: white;padding-bottom: 100px;">
     <p class="docheading">Select The Category of Doctors</p>
     <div id="container">
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php">Obstetrics and Gynecology</a></div>
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php">Internal Medicine - Cardiology</a></div>
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php">medical diagnostic radiology -board</a></div>
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php">Dentistry</a></div>
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php">Cancer Specialty</a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-1/index.php">Obstetrics and Gynecology</a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-2/index.php">Internal Medicine - Cardiology</a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-3/index.php">medical diagnostic radiology -board</a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-4/index.php">Dentistry</a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-5/index.php">Cancer Specialty</a></div>
     </div>
     <div id="container">
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php">Kidney Surgery - Urology</a></div>
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php">Brain Surgery - Spine - Neurospinal</a></div>
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php">Dental Treatment</a></div>
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php">Pediatric Medicine</a></div>
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php">Rheumatology Board</a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-6/index.php">Kidney Surgery - Urology</a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-7/index.php">Brain Surgery - Spine - Neurospinal</a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-8/index.php">Dental Treatment</a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-9/index.php">Pediatric Medicine</a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-10/index.php">Rheumatology Board</a></div>
     </div>
     <div id="container">
       <span></span>
       <span></span>
-      <div><a class="doc_link" href="./Card Slider/Cards/Card-1/index.php"><span>Dermatology - Cosmetic -  Laser</span></a></div>
+      <div><a class="doc_link" href="./Card Slider/Cards/Doctor-11/index.php"><span>Dermatology - Cosmetic -  Laser</span></a></div>
       <span></span>
       <span></span>
     </div>
