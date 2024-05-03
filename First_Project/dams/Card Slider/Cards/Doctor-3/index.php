@@ -53,7 +53,7 @@
 
 .container {
     border-radius: 20px;
-    margin-top: 104px;
+    margin-top: 169px;
 }
 
 
@@ -96,7 +96,7 @@ if (mysqli_num_rows($result) > 0)
         // echo "" .$row["MobileNumber"]."<br>";
         // echo "" .$row["Specialization"]."<br>";
         echo "<tr>";
-            echo "<td><a href='#' style='font-size: 15px;text-decoration: none;color: black;' >" .$row["FullName"] . "</a></td>";
+            echo "<td><a href='#' style='font-size: 15px;text-decoration: none;color: black; padding-left: 35px;' >" .$row["FullName"] . "</a></td>";
             echo "<br>";
             echo "<td><a href='#' style='font-size: 15px;text-decoration: none;color: black;margin-left: 63px;' >0" .$row["MobileNumber"] . "</a></td>";
  

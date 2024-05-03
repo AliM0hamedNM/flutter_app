@@ -52,7 +52,7 @@
 
 .container {
     border-radius: 20px;
-    margin-top: 93px;
+    margin-top: 152px;
 }
 
 

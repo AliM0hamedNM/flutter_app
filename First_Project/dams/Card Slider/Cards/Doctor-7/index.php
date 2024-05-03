@@ -53,7 +53,7 @@
 
 .container {
     border-radius: 20px;
-    margin-top: 113px;
+    margin-top: 169px;
 }
 
 

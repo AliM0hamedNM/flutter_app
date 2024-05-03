@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2024 at 09:59 AM
+-- Generation Time: May 04, 2024 at 12:59 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -33,15 +33,15 @@ CREATE TABLE `drugs` (
   `BARCODE` varchar(20) NOT NULL,
   `DOSE` varchar(10) NOT NULL,
   `CODE` varchar(10) NOT NULL,
-  `COST_PRICE` double NOT NULL,
-  `SELLING_PRICE` double NOT NULL,
+  `COST_PRICE` varchar(100) NOT NULL,
+  `SELLING_PRICE` varchar(100) NOT NULL,
   `EXPIRY` varchar(20) NOT NULL,
   `COMPANY_NAME` varchar(50) NOT NULL,
   `PRODUCTION_DATE` date NOT NULL,
   `EXPIRATION_DATE` date NOT NULL,
   `PLACE` varchar(20) NOT NULL,
   `QUANTITY` int(11) NOT NULL,
-  `id` int(10) UNSIGNED NOT NULL
+  `id` int(100) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -49,8 +49,13 @@ CREATE TABLE `drugs` (
 --
 
 INSERT INTO `drugs` (`NAME`, `TYPE`, `BARCODE`, `DOSE`, `CODE`, `COST_PRICE`, `SELLING_PRICE`, `EXPIRY`, `COMPANY_NAME`, `PRODUCTION_DATE`, `EXPIRATION_DATE`, `PLACE`, `QUANTITY`, `id`) VALUES
-('Novalo', 'Bills', 'fsdgjfihjorodsf', 'normal', '3d00', 2, 3, 'Available for use', 'Med_City', '2017-03-03', '2019-03-03', 'N-Right', 40, 1),
-('novafol', 'Bills', 'ftrkl432432md', 'normal', '2xaa', 33, 40, 'Available for use', 'Med_City', '2016-01-01', '2017-01-01', 'N-Left', 27, 2);
+('Novalo', 'Bills', 'fsdgjfihjorodsf', 'normal', '3d00', '5.250 IQ', '6.500 IQ', 'Available for use', 'Med_City', '2017-03-03', '2019-03-03', 'N-Right', 40, 1),
+('novafol', 'Bills', 'ftrkl432432md', 'normal', '2xaa', '4.500 IQ', '8.500 IQ', 'Available for use', 'Med_City', '2016-01-01', '2017-01-01', 'N-Left', 27, 2),
+('A- Ret cream x 30 g Medpharma', 'drink', 'ftrkl432522md', 'normal', '2xab', '5.200 IQ', '6.500 IQ', 'Available for use', 'Med_City', '2022-01-01', '2025-01-01', 'N-Left', 6, 3),
+('Amoxicillin 500mg x 100 cap Weiqida', 'Bills', 'ftrkl432322md', 'normal', '2xig', '10.752 IQ', '21.450 IQ', 'Available for use', 'Med_City', '2022-02-01', '2025-02-01', 'N-Right', 5, 4),
+('Beneday 250/1/300 mg x 30 tab Neutec', 'drink', 'ftlll432322md', 'normal', '6xig', '21.255 IQ', '25.500 IQ', 'Available for use', 'Med_City', '2022-02-01', '2025-02-01', 'N-Left', 8, 5),
+('BioDy D 25000 iu x 30 soft BioActive ', 'Bills', 'ftlll43362md', 'normal', '56ssq', '22.255 IQ', '26.250 IQ', 'Available for use', 'Med_City', '2022-02-01', '2025-02-05', 'N-Left', 7, 6),
+('Candid V - 1 x 500 mg x l vaginal', 'Bills', 'ftlll43300ds', 'normal', '56swq', '15.300 IQ', '18.500 IQ', 'Available for use', 'Med_City', '2022-02-01', '2025-02-05', 'N-Left', 9, 7);
 
 -- --------------------------------------------------------
 
@@ -89,7 +94,8 @@ INSERT INTO `tblappointment` (`ID`, `AppointmentNumber`, `Name`, `MobileNumber`,
 (7, 599829368, 'Anita', 4563214563, 'anta@test.com', '2022-11-25', '15:20:00', '2', 2, 'NA', '2022-11-11 01:49:54', NULL, NULL, NULL),
 (8, 940019123, 'Amit Kumar', 1425362514, 'amitkr123@test.com', '2022-11-15', '12:30:00', '13', 4, 'NA', '2022-11-11 01:56:17', 'Your appointment has been approved.', 'Approved', '2022-11-11 01:56:55'),
 (9, 415003599, 'ksdaskdj', 772395758, 'jdslkajdfjoj@gmail.com', '2024-04-23', '09:12:00', '2', 3, '', '2024-04-22 06:10:10', NULL, NULL, NULL),
-(10, 330611453, 'ali', 780726626, 'ali@email.com', '2024-08-14', '12:13:00', '11', 5, '1', '2024-04-25 09:12:55', '1', 'Approved', '2024-04-25 09:14:00');
+(10, 330611453, 'ali', 780726626, 'ali@email.com', '2024-08-14', '12:13:00', '11', 5, '1', '2024-04-25 09:12:55', '1', 'Approved', '2024-04-25 09:14:00'),
+(11, 983875665, 'ali', 964, 'ali@gmail.com', '2024-05-10', '16:00:00', '1', 1, 'dzfxghgjkjl', '2024-04-26 11:54:44', 'yes', 'Approved', '2024-04-26 11:55:44');
 
 -- --------------------------------------------------------
 
@@ -114,15 +120,15 @@ CREATE TABLE `tbldoctor` (
 INSERT INTO `tbldoctor` (`ID`, `FullName`, `MobileNumber`, `Email`, `Specialization`, `Password`, `CreationDate`) VALUES
 (1, 'Dr.Asil Fadel Jaddou\' Al-Shawk', 7801067498, 'AsilFadel@gmail.com', '1', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:41:14'),
 (2, 'Dr.Ali Mohammad Jalil', 7722416985, 'AliMohamed@gmail.com', '3', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:44:54'),
-(3, 'Dr.Fuad Mortada Hadi', 7736522555, 'FuadMortada@gmail.com', '2', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:46:27'),
+(3, 'Dr.Fuad Mortada Hadi', 7801401473, 'FuadMortada@gmail.com', '2', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:46:27'),
 (4, 'Dr.Mustafa Hadi Al-Khayyat', 7722452614, 'MustafaHadi@gmail.com', '4', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:47:43'),
-(5, 'Dr.Nahla Abu Tahin', 7733669954, 'Nahla@gmail.com', '11', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:48:55'),
+(5, 'Dr.Nahla Abu Tahin', 7722238330, 'Nahla@gmail.com', '11', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:48:55'),
 (6, 'Dr.Tamader Sabah Al-Hasnawi', 7722694535, 'TamaderSa@yahoo.com', '10', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:49:47'),
-(7, 'Dr.Sa\'ib Mohammed Al-Amiri', 7801055214, 'Sa\'ib@yahoo.com', '9', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:51:15'),
+(7, 'Dr.Sa\'ib Mohammed Al-Amiri', 7806120051, 'Sa\'ib@yahoo.com', '9', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:51:15'),
 (8, 'Dr.Hamsa Zaki Al-Asadi', 7801695222, 'HamsaZaki@gmail.com', '8', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:52:05'),
-(9, 'Dr.Hussam Ghazi Al-Anbari', 7722418899, 'Hussam@gmail.com', '7', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:52:58'),
+(9, 'Dr.Hussam Ghazi Al-Anbari', 7723262178, 'Hussam@gmail.com', '7', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:52:58'),
 (10, 'Dr.Riyadh Taha', 7733636558, 'RiyadhTaha@yahoo.com', '6', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:54:56'),
-(11, 'Hawraa Al-Ghanimi', 7806314777, 'Hawraa@gmail.com', '5', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 15:05:48');
+(11, 'Dr.Hawraa Al-Ghanimi', 7825970931, 'Hawraa@gmail.com', '5', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 15:05:48');
 
 -- --------------------------------------------------------
 
@@ -204,7 +210,10 @@ INSERT INTO `treatment` (`id`, `drug_id`, `patient_id`) VALUES
 (7, 2, 485109480),
 (8, 1, 611388102),
 (9, 2, 611388102),
-(10, 2, 330611453);
+(10, 2, 330611453),
+(11, 1, 983875665),
+(12, 2, 983875665),
+(13, 1, 983875665);
 
 --
 -- Indexes for dumped tables
@@ -254,13 +263,13 @@ ALTER TABLE `treatment`
 -- AUTO_INCREMENT for table `drugs`
 --
 ALTER TABLE `drugs`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(100) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tblappointment`
 --
 ALTER TABLE `tblappointment`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `tbldoctor`
@@ -284,7 +293,7 @@ ALTER TABLE `tblspecialization`
 -- AUTO_INCREMENT for table `treatment`
 --
 ALTER TABLE `treatment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

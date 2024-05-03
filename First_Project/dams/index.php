@@ -126,6 +126,86 @@ $("#doctorlist").html(data);
   color: white;
 }
 
+
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////// */
+
+
+
+.buttonn {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(0 107 179);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonn:hover {
+  transform: scale(1.10);
+  border-color: #fff9;
+}
+
+.buttonn:hover .icon {
+  transform: translate(4px);
+}
+
+.buttonn:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.buttonn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
 </style>
     </head>
     
@@ -221,8 +301,73 @@ foreach($results as $row)
 
 </center> -->
 
+
+
+
             <center style="background-color: white;padding-bottom: 100px;">
     <p class="docheading">Select The Category of Doctors</p>
+
+
+    <div id="container" >
+<a href="./Card Slider/Cards/Doctor-1/index.php"><button class="buttonn" style="margin-left:39px;">
+  Obstetrics and Gynecology
+ </button></a>
+ <a href="./Card Slider/Cards/Doctor-2/index.php"><button class="buttonn" style="    margin-left: 29px;">
+ Internal Medicine - Cardiology
+ </button></a>
+ <a href="./Card Slider/Cards/Doctor-3/index.php"><button class="buttonn" style="    margin-left: 29px;">
+ medical diagnostic radiology -board
+ </button></a>
+ <a href="./Card Slider/Cards/Doctor-4/index.php"><button class="buttonn" style="    margin-left: 29px;">
+ Dentistry
+ </button></a>
+ <a href="./Card Slider/Cards/Doctor-5/index.php"><button class="buttonn" style="    margin-left: 29px;">
+ Cancer Specialty
+ </button></a>
+  </div>
+
+
+
+  <div id="container" style="margin-top:40px">
+<a href="./Card Slider/Cards/Doctor-6/index.php"><button class="buttonn" style="margin-left:39px;">
+Kidney Surgery - Urology
+  </button></a>
+ <a href="./Card Slider/Cards/Doctor-7/index.php"><button class="buttonn" style="    margin-left: 29px;">
+ Brain Surgery - Spine - Neurospinal
+    
+ </button></a>
+ <a href="./Card Slider/Cards/Doctor-8/index.php"><button class="buttonn" style="    margin-left: 29px;">
+ Dental Treatment
+ </button></a>
+ <a href="./Card Slider/Cards/Doctor-9/index.php"><button class="buttonn" style="    margin-left: 29px;">
+ Pediatric Medicine
+ </button></a>
+ <a href="./Card Slider/Cards/Doctor-10/index.php"><button class="buttonn" style="    margin-left: 29px;">
+ Rheumatology Board
+ </button></a>
+  </div>
+
+
+
+  <div id="container" style="margin-top:40px">
+<a href="./Card Slider/Cards/Doctor-11/index.php"><button class="buttonn" style="margin-left:39px;">
+Dermatology - Cosmetic -  Laser
+  </button></a>
+ 
+  </div>
+
+
+
+
+
+
+  <br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
     <div id="container">
       <div><a class="doc_link" href="./Card Slider/Cards/Doctor-1/index.php">Obstetrics and Gynecology</a></div>
       <div><a class="doc_link" href="./Card Slider/Cards/Doctor-2/index.php">Internal Medicine - Cardiology</a></div>
@@ -237,6 +382,7 @@ foreach($results as $row)
       <div><a class="doc_link" href="./Card Slider/Cards/Doctor-9/index.php">Pediatric Medicine</a></div>
       <div><a class="doc_link" href="./Card Slider/Cards/Doctor-10/index.php">Rheumatology Board</a></div>
     </div>
+    &nbsp;
     <div id="container">
       <span></span>
       <span></span>

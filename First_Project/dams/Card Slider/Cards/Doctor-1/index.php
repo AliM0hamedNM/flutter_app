@@ -43,7 +43,7 @@
   padding: 0;
 }
 .background-imag{
-  background-image: url('MY_CLINIC.jpg');
+  background-image: url('./MY_CLINIC.jpg');
   background-size:cover;
   background-repeat:no-repeat;
   height: 100vh;
@@ -52,7 +52,7 @@
 
 .container {
     border-radius: 20px;
-    margin-top: 93px;
+    margin-top: 152px;
 }
 
 

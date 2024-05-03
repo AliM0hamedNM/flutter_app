@@ -43,7 +43,7 @@
   padding: 0;
 }
 .background-imag{
-  background-image: url('MY_CLINIC.jpg');
+  background-image: url('./MY_CLINIC.jpg');
   background-size:cover;
   background-repeat:no-repeat;
   height: 100vh;
@@ -52,7 +52,7 @@
 
 .container {
     border-radius: 20px;
-    margin-top: 93px;
+    margin-top: 152px;
 }
 
 
@@ -70,7 +70,7 @@
         <div class="swiper-slide card">
           <div class="card-content">
             <div class="image">
-              <img src="img/1.jpg" alt="">
+              <img src="img/MY_CLINIC.jpg" alt="">
             </div>
 
             <div class="social-media">
@@ -95,7 +95,7 @@ if (mysqli_num_rows($result) > 0)
         // echo "" .$row["MobileNumber"]."<br>";
         // echo "" .$row["Specialization"]."<br>";
         echo "<tr>";
-            echo "<td><a href='#' style='font-size: 15px;text-decoration: none;color: black;' >" .$row["FullName"] . "</a></td>";
+            echo "<td><a href='#' style='font-size: 15px; padding-left: 30px;text-decoration: none;color: black;' >" .$row["FullName"] . "</a></td>";
             echo "<br>";
             echo "<td><a href='#' style='font-size: 15px;text-decoration: none;color: black;margin-left: 63px;' >0" .$row["MobileNumber"] . "</a></td>";
  

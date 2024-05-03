@@ -53,7 +53,7 @@
 
 .container {
     border-radius: 20px;
-    margin-top: 93px;
+    margin-top: 152px;
 }
 
 
@@ -71,7 +71,7 @@
         <div class="swiper-slide card">
           <div class="card-content">
             <div class="image">
-              <img src="img/1.jpg" alt="">
+              <img src="img/MY_CLINIC.jpg" alt="">
             </div>
 
             <div class="social-media">
