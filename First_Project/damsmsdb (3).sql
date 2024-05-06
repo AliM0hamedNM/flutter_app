@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2024 at 12:59 AM
+-- Generation Time: May 06, 2024 at 11:40 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -118,7 +118,7 @@ CREATE TABLE `tbldoctor` (
 --
 
 INSERT INTO `tbldoctor` (`ID`, `FullName`, `MobileNumber`, `Email`, `Specialization`, `Password`, `CreationDate`) VALUES
-(1, 'Dr.Asil Fadel Jaddou\' Al-Shawk', 7801067498, 'AsilFadel@gmail.com', '1', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:41:14'),
+(1, 'Dr.Asil Fadel Jaddou\' Al-Shawk', 7801067498, 'AsilFadel@gmail.com', '1', '25d55ad283aa400af464c76d713c07ad', '2024-04-03 13:59:24'),
 (2, 'Dr.Ali Mohammad Jalil', 7722416985, 'AliMohamed@gmail.com', '3', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:44:54'),
 (3, 'Dr.Fuad Mortada Hadi', 7801401473, 'FuadMortada@gmail.com', '2', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:46:27'),
 (4, 'Dr.Mustafa Hadi Al-Khayyat', 7722452614, 'MustafaHadi@gmail.com', '4', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:47:43'),
@@ -128,7 +128,12 @@ INSERT INTO `tbldoctor` (`ID`, `FullName`, `MobileNumber`, `Email`, `Specializat
 (8, 'Dr.Hamsa Zaki Al-Asadi', 7801695222, 'HamsaZaki@gmail.com', '8', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:52:05'),
 (9, 'Dr.Hussam Ghazi Al-Anbari', 7723262178, 'Hussam@gmail.com', '7', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:52:58'),
 (10, 'Dr.Riyadh Taha', 7733636558, 'RiyadhTaha@yahoo.com', '6', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 14:54:56'),
-(11, 'Dr.Hawraa Al-Ghanimi', 7825970931, 'Hawraa@gmail.com', '5', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 15:05:48');
+(11, 'Dr.Hawraa Al-Ghanimi', 7825970931, 'Hawraa@gmail.com', '5', '25d55ad283aa400af464c76d713c07ad', '2024-04-20 15:05:48'),
+(17, 'sdfb', 651651651651, 'bsdfbsdf', 'bdsfb', '11111111111111111111111111', '2024-05-06 08:08:57'),
+(18, 'sdfb', 651651651651, 'bsdfbsdfeee@gmail.com', 'bdsfb', '4444444444444444444444', '2024-05-06 08:23:09'),
+(20, 'sdfb', 0, 'bsdfbsdf@gmail.com', 'bdsfb', NULL, '2024-05-06 08:29:30'),
+(21, 'sdfb', 0, 'bsdfbsdf@gmail.com', 'bdsfb', NULL, '2024-05-06 08:30:32'),
+(22, 'sdfb', 651651651651, 'bsdfbsdf@gmail.com', 'bdsfb', '5555555555555555555555', '2024-05-06 08:34:20');
 
 -- --------------------------------------------------------
 
@@ -152,8 +157,8 @@ CREATE TABLE `tblpage` (
 --
 
 INSERT INTO `tblpage` (`ID`, `PageType`, `PageTitle`, `PageDescription`, `Email`, `MobileNumber`, `UpdationDate`, `Timing`) VALUES
-(1, 'aboutus', 'About Us', '<div><font color=\"#202124\" face=\"arial, sans-serif\"><b>Our mission declares our purpose of existence as a company and our objectives.</b></font></div><div><font color=\"#202124\" face=\"arial, sans-serif\"><b><br></b></font></div><div><font color=\"#202124\" face=\"arial, sans-serif\"><b>To give every customer much more than what he/she asks for in terms of quality, selection, value for money and customer service, by understanding local tastes and preferences and innovating constantly to eventually provide an unmatched experience in jewellery shopping.</b></font></div>', NULL, NULL, NULL, ''),
-(2, 'contactus', 'Contact Us', '890,Sector 62, Gyan Sarovar, GAIL Noida(Delhi/NCR)', 'info@gmail.com', 7896541239, NULL, '10:30 am to 7:30 pm');
+(1, 'aboutus', 'About Us', '<div><font color=\"#202124\" face=\"arial, sans-serif\"><b>Ibn Sina Medical Complex, located on Al-Iskan Street near Al-Sanater Street, contains more than 13 doctors, provides reservations via the Internet, and also provides you with communication with the doctor personally. The patient can also view the status of his request, as well as the treatment written by the doctor and whether it has been approved.</b></font></div>', NULL, NULL, NULL, ''),
+(2, 'contactus', 'Contact Us', 'Karbala, Al-Iskan Street, near Al-Waeli Hospital', 'info@gmail.com', 9647723957588, NULL, '10:30 am to 7:30 pm');
 
 -- --------------------------------------------------------
 
@@ -275,7 +280,7 @@ ALTER TABLE `tblappointment`
 -- AUTO_INCREMENT for table `tbldoctor`
 --
 ALTER TABLE `tbldoctor`
-  MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `tblpage`

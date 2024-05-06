@@ -157,7 +157,7 @@ $results = $query->fetchAll(PDO::FETCH_OBJ);
 
 
                                         <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                                            <button type="submit" class="form-control" name="submit" id="submit-button">ADD</button>
+                                            <button type="submit" class="form-control" name="submit" id="submit-button" style="background: #247cff;border-radius: 33px;">ADD</button>
                                         </div>
                                     </div>
                                 </form>

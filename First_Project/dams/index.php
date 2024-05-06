@@ -268,7 +268,7 @@ foreach($results as $row)
 
                         <div class="col-lg-4 col-md-5 col-12 mx-auto">
                             <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
-                                <p class="featured-text"><span class="featured-number">12</span> Years<br> of Experiences</p>
+                                <p class="featured-text"><span class="featured-number">13</span> Years<br> of Experiences</p>
                             </div>
                         </div>
 
@@ -306,6 +306,9 @@ foreach($results as $row)
 
             <center style="background-color: white;padding-bottom: 100px;">
     <p class="docheading">Select The Category of Doctors</p>
+
+    <br>
+    <br>
 
 
     <div id="container" >
@@ -361,14 +364,14 @@ Dermatology - Cosmetic -  Laser
 
 
 
-  <br><br><br><br><br><br><br><br><br>
+  <br> 
 
 
 
 
 
 
-    <div id="container">
+    <!-- <div id="container">
       <div><a class="doc_link" href="./Card Slider/Cards/Doctor-1/index.php">Obstetrics and Gynecology</a></div>
       <div><a class="doc_link" href="./Card Slider/Cards/Doctor-2/index.php">Internal Medicine - Cardiology</a></div>
       <div><a class="doc_link" href="./Card Slider/Cards/Doctor-3/index.php">medical diagnostic radiology -board</a></div>
@@ -389,7 +392,7 @@ Dermatology - Cosmetic -  Laser
       <div><a class="doc_link" href="./Card Slider/Cards/Doctor-11/index.php"><span>Dermatology - Cosmetic -  Laser</span></a></div>
       <span></span>
       <span></span>
-    </div>
+    </div> -->
    
   </center>
             <!-- <section class="gallery">
