@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2024 at 11:40 PM
+-- Generation Time: May 09, 2024 at 12:53 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -94,8 +94,7 @@ INSERT INTO `tblappointment` (`ID`, `AppointmentNumber`, `Name`, `MobileNumber`,
 (7, 599829368, 'Anita', 4563214563, 'anta@test.com', '2022-11-25', '15:20:00', '2', 2, 'NA', '2022-11-11 01:49:54', NULL, NULL, NULL),
 (8, 940019123, 'Amit Kumar', 1425362514, 'amitkr123@test.com', '2022-11-15', '12:30:00', '13', 4, 'NA', '2022-11-11 01:56:17', 'Your appointment has been approved.', 'Approved', '2022-11-11 01:56:55'),
 (9, 415003599, 'ksdaskdj', 772395758, 'jdslkajdfjoj@gmail.com', '2024-04-23', '09:12:00', '2', 3, '', '2024-04-22 06:10:10', NULL, NULL, NULL),
-(10, 330611453, 'ali', 780726626, 'ali@email.com', '2024-08-14', '12:13:00', '11', 5, '1', '2024-04-25 09:12:55', '1', 'Approved', '2024-04-25 09:14:00'),
-(11, 983875665, 'ali', 964, 'ali@gmail.com', '2024-05-10', '16:00:00', '1', 1, 'dzfxghgjkjl', '2024-04-26 11:54:44', 'yes', 'Approved', '2024-04-26 11:55:44');
+(10, 330611453, 'ali', 780726626, 'ali@email.com', '2024-08-14', '12:13:00', '11', 5, '1', '2024-04-25 09:12:55', '1', 'Approved', '2024-04-25 09:14:00');
 
 -- --------------------------------------------------------
 
