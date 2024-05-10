@@ -82,7 +82,9 @@ echo "<script>alert('Invalid Details');</script>";
 	<link rel="stylesheet" href="assets/css/misc-pages.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900,300">
 </head>
-<body class="simple-page">
+<body class="simple-page" style="
+    background-color: #247CFF;
+">
 	<div id="back-to-home">
 		<a href="../index.php" class="btn btn-outline btn-default"><i class="fa fa-home animated zoomIn"></i></a>
 	</div>
