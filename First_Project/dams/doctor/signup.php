@@ -68,8 +68,8 @@ echo "<script>alert('Email-id already exist. Please try again');</script>";
 	<div class="simple-page-wrap">
 		<div class="simple-page-logo animated swing">
 			
-				<span style="color: white"><i class="fa fa-gg"></i></span>
-				<span style="color: white">DAMS</span>
+				<span style="color: white"> </span>
+				<span style="color: white"> </span>
 			
 		</div><!-- logo -->
 		<div class="simple-page-form animated flipInY" id="login-form">

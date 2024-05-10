@@ -81,7 +81,9 @@
             </div>
 
             <div class="name-profession">
-              <span class="name"><?php
+              <span class="name" style="
+    font-family: 'Poppins';
+"><?php
 include('./dbconnection.php');
 $sql = "select ID,FullName,MobileNumber,Specialization from tbldoctor where ID=9";
 
